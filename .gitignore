@@ -1,0 +1,10 @@
+.idea
+.vscode
+MyTubExt
+geckodriver.log
+style.css
+script.js
+manifest.json
+NC_045512
+sars-cov-2.pseq
+data-collector.py
