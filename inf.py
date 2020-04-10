@@ -1,8 +1,9 @@
 import requests
-from bs4 import BeautifulSoup as bsoup
+from bs4 import BeautifulSoup as bs
 import os
 import time
 
+#iterator = 0
 
 #class sample_types:
 #todo
@@ -19,16 +20,18 @@ def visualize():
     print("todo stuffs for visualizing")
 
 
-
-def scrap_collector(spl_id, spl_type):
-
-    url = "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=" + spl_id + "&db=" + spl_type + "&report=genbank&extrafeat=null&conwithfeat=on&retmode=html&tool=portal&withmarkup=on&maxdownloadsize=1000000"
+def soup_collector(item_id, item_type):
+    url = "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=" + item_id + "&db=" + item_type + "&report=genbank&extrafeat=null&conwithfeat=on&retmode=html&tool=portal&withmarkup=on&maxdownloadsize=1000000"
     data = requests.get(url)
-    soup = bsoup(data.content, 'html.parser')
-    
+    soup = bs(data.content, 'html.parser')
+
+    #killing javascripts and stylesheets
     for script in soup(["script", "style"]):
         script.decompose()
+    return soup
 
+def name_collector(spl_id, spl_type):
+    soup = soup_collector(spl_id, spl_type)
     sample_info_type = soup.findAll('a')
     
     #unwanted till now START
@@ -38,12 +41,16 @@ def scrap_collector(spl_id, spl_type):
         sample_info_name = sample_info_name1 + "_" + sample_info_name2
     except:
         sample_info_name = sample_info_type[0].get('name').split('_')[1].strip()
-    print(sample_info_name)
+    return sample_info_name
     #END
+#intro
 
-    #intro
-    raw_intro = soup.findAll('a', {"name":'comment_' + sample_info_name})[0]
+def intro(spl_id, spl_type):
+    soup = soup_collector(spl_id, spl_type)
+    sample_info_name = name_collector(spl_id, spl_type)
+    
     try:
+        raw_intro = soup.findAll('a', {"name":'comment_' + sample_info_name})[0]        
         intro7 = raw_intro.previousSibling
         intro6 = raw_intro.previousSibling.previousSibling
         intro5 = raw_intro.previousSibling.previousSibling.previousSibling
@@ -52,27 +59,100 @@ def scrap_collector(spl_id, spl_type):
         intro2 = raw_intro.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling
         intro1 = raw_intro.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling
         intro = str(intro1) + str(intro2) + str(intro3) + str(intro4) + str(intro5) + str(intro6) + str(intro7)
-
+        return intro 
     except:
         pass
 
+def comment(spl_id, spl_type):
+    soup = soup_collector(spl_id, spl_type)
+    sample_info_name = name_collector(spl_id, spl_type)
+    
+    
+    try:
+        raw_intro = soup.findAll('a', {"href":'https://www.ncbi.nlm.nih.gov/RefSeq/'})[0]
+        intro7 = raw_intro.nextSibling
+        intro6 = raw_intro.nextSibling.nextSibling
+        intro5 = raw_intro.nextSibling.nextSibling.nextSibling
+        intro4 = raw_intro.nextSibling.nextSibling.nextSibling.nextSibling
+        intro3 = raw_intro.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling
+        intro2 = raw_intro.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling
+        intro1 = raw_intro.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling
+        intro = str(intro7) + str(intro6) + str(intro5) + str(intro4) + str(intro3) + str(intro2) + str(intro1)
+        return intro
+    except:
+        pass
+       
+
 #    intro = str(intro1) + str(intro2) + str(intro3) + str(intro4) + str(intro5) + str(intro6) + str(intro7)
-   
 
 #    comment
-#    feature PART1
-    raw_feature = soup.findAll('span', {"class": "feature"})[0]
-    feature = raw_feature.text
-
-#   feature PART2
-    raw_feature1 = soup.findAll('span', {"class": "feature"})[1]
-    feature1 = raw_feature1.text
-    print(feature1)
-
-#    return comment, feature, intro ,url
+##   __TODO__
     
+#feature
+##    feature PART1
+def feature_source(spl_id, spl_type):
+    soup = soup_collector(spl_id, spl_type)
+    sample_info_name = name_collector(spl_id, spl_type)
+    iterator = 0
+    while True:
+        source = soup.find('span', {"id": "feature_" + sample_info_name + "_source_" + str(iterator)})   
+        if source == None:
+            break
+        return source.text
+        iterator += 1
+
+##    feature PART2
+def feature_gene(spl_id, spl_type):
+    soup = soup_collector(spl_id, spl_type)
+    sample_info_name = name_collector(spl_id, spl_type)
+    iterator = 0
+    while True:
+        gene = soup.find('span', {"id": "feature_" + sample_info_name + "_gene_" + str(iterator)})
+        if gene == None:
+            break
+        return gene.text
+        iterator += 1
 
 
+
+## feature PART3
+def feature_cds(spl_id, spl_type):
+    soup = soup_collector(spl_id, spl_type)
+    sample_info_name = name_collector(spl_id, spl_type)    
+    iterator = 0
+    while True:
+        cds = soup.find('span', {"id": "feature_" + sample_info_name + "_CDS_" + str(iterator)})
+        if cds == None:
+            break
+        return cds.text
+        iterator += 1
+
+def feature_peptide(spl_id, spl_type):
+    soup = soup_collector(spl_id, spl_type)
+    sample_info_name = name_collector(spl_id, spl_type)
+    iterator = 0
+    while True:
+        source = soup.find('span', {"id": "feature_" + sample_info_name + "_mat_peptide_" + str(iterator)})   
+        if source == None:
+            break
+        return source.text
+        iterator += 1
+
+def feature_stem_loop(spl_id, spl_type):
+    soup = soup_collector(spl_id, spl_type)
+    sample_info_name = name_collector(spl_id, spl_type)
+    iterator = 0
+    while True:
+        stem_loop = soup.find('span', {"id": "feature_" + sample_info_name + "_stem_loop_" + str(iterator)})   
+        if stem_loop == None:
+            break
+        return stem_loop.text
+        iterator += 1
+#    return comment, feature, intro ,url
+
+'''
+    well, you can keep the item type as variable but for any "special case purpose", i defined all separately
+'''
 
 
 
@@ -89,13 +169,14 @@ def data_collector(sample_id, sample_type, report_type, doc_type):
     
     if doc_type == 'html':
         #do stuff 
-        comment, feature = scrap_collector(sample_id, sample_type).split(",")
+        feature = feature(sample_id, sample_type)
+        comment = comment(sample_id, sample_type)
         return comment, feature
         
     else:
         url = "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=" + sample_id + "&db=" + sample_type + "&report=" + report_type +"&extrafeat=null&conwithfeat=on&retmode="+doc_type+"&tool=portal&maxdownloadsize=1000000"
         data = requests.get(url)
-        soup = bsoup(data.content, 'html.parser')
+        soup = bs(data.content, 'html.parser')
         for script in soup(["script", "style"]):
             script.decompose()
         return soup, url
@@ -159,4 +240,4 @@ def main():
 
 if __name__ == "__main__":
     #main()
-    scrap_collector(str(sample_id), str(sample_type))
+    print(comment(str(sample_id), str(sample_type)))
