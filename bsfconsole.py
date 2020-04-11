@@ -4,11 +4,11 @@ import os
 import time
 import argparse
 import sys
+
 #iterator = 0
 
 #class sample_types:
 #todo
-
 
 #default data provided
 sample_id = 1798174254 #SARS_CoV-2 sample id
@@ -64,6 +64,91 @@ def intro(spl_id, spl_type):
     except:
         pass
 
+
+
+#    intro = str(intro1) + str(intro2) + str(intro3) + str(intro4) + str(intro5) + str(intro6) + str(intro7)
+
+#    comment
+##   __TODO__
+    
+#feature
+
+## feature PART1
+def feature_source(spl_id, spl_type):
+    def source(spl_id_dup, spl_type_dup):
+        soup = soup_collector(spl_id, spl_type)
+        sample_info_name = name_collector(spl_id, spl_type)
+        iterator = 0
+        while True:
+            source = soup.find('span', {"id": "feature_" + sample_info_name + "_source_" + str(iterator)})   
+            if source == None:
+                break
+            print(source.text)
+            iterator += 1
+    value = source(spl_id, spl_type)
+    return value
+
+## feature PART2
+def feature_gene(spl_id, spl_type):
+    def gene(spl_id_dup, spl_type_dup):
+        soup = soup_collector(spl_id, spl_type)
+        sample_info_name = name_collector(spl_id, spl_type)
+        iterator = 0
+        while True:
+            gene = soup.find('span', {"id": "feature_" + sample_info_name + "_gene_" + str(iterator)})
+            if gene == None:
+                break
+            print(gene.text)
+            iterator += 1
+    value = gene(spl_id, spl_type)
+    return value
+
+## feature PART3
+def feature_cds(spl_id, spl_type):
+    def cds(spl_id_dup, spl_type_dup):
+        soup = soup_collector(spl_id, spl_type)
+        sample_info_name = name_collector(spl_id, spl_type)    
+        iterator = 0
+        while True:
+            cds = soup.find('span', {"id": "feature_" + sample_info_name + "_CDS_" + str(iterator)})
+            if cds == None:
+                break
+            print(cds.text)
+            iterator += 1
+    value = cds(spl_id, spl_type)
+    return value
+
+## feature PART4
+def feature_peptide(spl_id, spl_type):
+    def peptide(spl_id_dup, spl_type_dup):
+        soup = soup_collector(spl_id, spl_type)
+        sample_info_name = name_collector(spl_id, spl_type)
+        iterator = 0
+        while True:
+            source = soup.find('span', {"id": "feature_" + sample_info_name + "_mat_peptide_" + str(iterator)})   
+            if source == None:
+                break
+            print(source.text)
+            iterator += 1
+    value = peptide(spl_id, spl_type)
+    return value
+
+## feature PART5
+def feature_stem_loop(spl_id, spl_type):
+    def stem(spl_id_dup, spl_type_dup):
+        soup = soup_collector(spl_id, spl_type)
+        sample_info_name = name_collector(spl_id, spl_type)
+        iterator = 0
+        while True:
+            stem_loop = soup.find('span', {"id": "feature_" + sample_info_name + "_stem_loop_" + str(iterator)})   
+            if stem_loop == None:
+                break
+            print(stem_loop.text)
+            iterator += 1
+    value = stem(spl_id, spl_type)
+    return value
+
+#comment
 def comment(spl_id, spl_type):
     soup = soup_collector(spl_id, spl_type)
     sample_info_name = name_collector(spl_id, spl_type)
@@ -82,74 +167,22 @@ def comment(spl_id, spl_type):
         return intro
     except:
         pass
-       
-
-#    intro = str(intro1) + str(intro2) + str(intro3) + str(intro4) + str(intro5) + str(intro6) + str(intro7)
-
-#    comment
-##   __TODO__
-    
-#feature
-##    feature PART1
-def feature_source(spl_id, spl_type):
-    soup = soup_collector(spl_id, spl_type)
-    sample_info_name = name_collector(spl_id, spl_type)
-    iterator = 0
-    while True:
-        source = soup.find('span', {"id": "feature_" + sample_info_name + "_source_" + str(iterator)})   
-        if source == None:
-            break
-        return source.text
-        iterator += 1
-
-##    feature PART2
-def feature_gene(spl_id, spl_type):
-    soup = soup_collector(spl_id, spl_type)
-    sample_info_name = name_collector(spl_id, spl_type)
-    iterator = 0
-    while True:
-        gene = soup.find('span', {"id": "feature_" + sample_info_name + "_gene_" + str(iterator)})
-        if gene == None:
-            break
-        return gene.text
-        iterator += 1
 
 
+def chain_sequence(spl_id, spl_type):
+    def sequence(spl_id_dup, spl_type_dup):
+        soup = soup_collector(spl_id, spl_type)
+        sample_info_name = name_collector(spl_id, spl_type)
+        iterator = 1
+        while True:
+            source = soup.find('span', {"id": sample_info_name + "_" + str(iterator)})   
+            if source == None:
+                break
+            iterator += 60            
+            print(source.text)
 
-## feature PART3
-def feature_cds(spl_id, spl_type):
-    soup = soup_collector(spl_id, spl_type)
-    sample_info_name = name_collector(spl_id, spl_type)    
-    iterator = 0
-    while True:
-        cds = soup.find('span', {"id": "feature_" + sample_info_name + "_CDS_" + str(iterator)})
-        if cds == None:
-            break
-        return cds.text
-        iterator += 1
-
-def feature_peptide(spl_id, spl_type):
-    soup = soup_collector(spl_id, spl_type)
-    sample_info_name = name_collector(spl_id, spl_type)
-    iterator = 0
-    while True:
-        source = soup.find('span', {"id": "feature_" + sample_info_name + "_mat_peptide_" + str(iterator)})   
-        if source == None:
-            break
-        return source.text
-        iterator += 1
-
-def feature_stem_loop(spl_id, spl_type):
-    soup = soup_collector(spl_id, spl_type)
-    sample_info_name = name_collector(spl_id, spl_type)
-    iterator = 0
-    while True:
-        stem_loop = soup.find('span', {"id": "feature_" + sample_info_name + "_stem_loop_" + str(iterator)})   
-        if stem_loop == None:
-            break
-        return stem_loop.text
-        iterator += 1
-#    return comment, feature, intro ,url
+    value = sequence(spl_id, spl_type)
+    return value
 
 '''
     well, you can keep the item type as variable but for any "special case purpose", i defined all separately
@@ -166,10 +199,11 @@ def data_collector(sample_id, sample_type, report_type, doc_type):
     
     if doc_type == 'html':
         #do stuff 
-        feature = feature(sample_id, sample_type)
-        comment = comment(sample_id, sample_type)
-        return comment, feature
-        
+        #feature = feature(sample_id, sample_type)
+        #comment = comment(sample_id, sample_type)
+        #return comment, feature
+        print("todo")
+
     else:
         url = "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=" + sample_id + "&db=" + sample_type + "&report=" + report_type +"&extrafeat=null&conwithfeat=on&retmode="+doc_type+"&tool=portal&maxdownloadsize=1000000"
         data = requests.get(url)
@@ -214,7 +248,7 @@ def main():
         }
 
 
-        if command == "":
+        if command == None:
             print('No command supplied. type help to see all commands')
 
         if command == cases[0]:
@@ -237,6 +271,8 @@ def main():
 
 if __name__ == "__main__":
     #main()
-    #print(comment(str(sample_id), str(sample_type)))
-    if sys.argv[1] == '-v' or sys.argv[1] == '--version':
-        print('bsfconsole [version 0.1]')
+    try:
+        if sys.argv[1] == "-v" or sys.argv[1] == "--version":
+            print('BSFramework v0.2')
+    except:
+            pass
