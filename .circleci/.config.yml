@@ -36,7 +36,7 @@ jobs: # A basic unit of work in a run
             pipenv install            
       - run:
           command: |
-            pipenv run python3 bsfconsole.py --version
+            pipenv run python manage.py bsfconsole.py --version
       - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: test-results
       - store_artifacts: # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
