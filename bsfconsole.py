@@ -2,7 +2,8 @@ import requests
 from bs4 import BeautifulSoup as bs
 import os
 import time
-
+import argparse
+import sys
 #iterator = 0
 
 #class sample_types:
@@ -155,10 +156,6 @@ def feature_stem_loop(spl_id, spl_type):
 '''
 
 
-
-
-
-
 def show_options():
     print("todo stuffs")
 
@@ -240,4 +237,6 @@ def main():
 
 if __name__ == "__main__":
     #main()
-    print(comment(str(sample_id), str(sample_type)))
+    #print(comment(str(sample_id), str(sample_type)))
+    if sys.argv[1] == '-v' or sys.argv[1] == '--version':
+        print('bsfconsole [version 0.1]')
