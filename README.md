@@ -1,0 +1,1 @@
+[![CircleCI](https://circleci.com/gh/0x0is1/BSFramework.svg?style=shield)](https://app.circleci.com/pipelines/github/0x0is1/BSFramework)
