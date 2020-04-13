@@ -1,24 +1,28 @@
-import requests
-from bs4 import BeautifulSoup as bs
-import os
-import time
-import argparse
-import sys
+try:
+    import requests
+    from bs4 import BeautifulSoup as bs
+    import os
+    import time
+    import argparse
+    import sys
 
-#iterator = 0
+except:
+    print('Required dependecies might not be installed')
+    print('install by typing "pip install -r requirements.txt"')
 
 #class sample_types:
 #todo
+class default_data:
+    #default data provided
+    sample_id = 1798174254 #SARS_CoV-2 sample id
+    #sample_id = 16555694
+    sample_type = "nuccore" #nucleotide
+    report_type = "genbank"
+    doc_type = "json"
 
-#default data provided
-sample_id = 1798174254 #SARS_CoV-2 sample id
-#sample_id = 16555694
-sample_type = "nuccore" #nucleotide
-report_type = "genbank"
-doc_type = "json"
-
-def visualize():
+def visualize(url):
     print("todo stuffs for visualizing")
+    os.system('firefox-esr ' + url) #to be improved
 
 
 def soup_collector(item_id, item_type):
@@ -64,13 +68,7 @@ def intro(spl_id, spl_type):
     except:
         pass
 
-
-
-#    intro = str(intro1) + str(intro2) + str(intro3) + str(intro4) + str(intro5) + str(intro6) + str(intro7)
-
-#    comment
-##   __TODO__
-    
+   
 #feature
 
 ## feature PART1
@@ -188,21 +186,20 @@ def chain_sequence(spl_id, spl_type):
     well, you can keep the item type as variable but for any "special case purpose", i defined all separately
 '''
 
-
 def show_options():
     print("todo stuffs")
-
-
-
 
 def data_collector(sample_id, sample_type, report_type, doc_type):
     
     if doc_type == 'html':
         #do stuff 
-        #feature = feature(sample_id, sample_type)
-        #comment = comment(sample_id, sample_type)
-        #return comment, feature
-        print("todo")
+        genefeature = feature_gene(sample_id, sample_type)
+        slfeature = feature_stem_loop(sample_id, sample_type)
+        pfeature = feature_peptide(sample_id, sample_type)
+        cfeature = feature_cds(sample_id, sample_type)
+        sofeature = feature_source(sample_id, sample_type)
+        comment = comment(sample_id, sample_type)
+        return genefeature, slfeature, pfeature, cfeature, sofeature, comment
 
     else:
         url = "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=" + sample_id + "&db=" + sample_type + "&report=" + report_type +"&extrafeat=null&conwithfeat=on&retmode="+doc_type+"&tool=portal&maxdownloadsize=1000000"
@@ -234,8 +231,11 @@ def main():
 
         except:
             command = raw_command
-        
-        data, url = data_collector(str(sample_id), str(sample_type), str(report_type), str(doc_type))
+        try:
+            genefeature, slfeature, pfeature, cfeature, sofeature, comment = data_collector(str(default_data.sample_id), str(default_data.sample_type), str(default_data.report_type), str(default_data.doc_type))
+
+        except:
+            data, url = data_collector(str(default_data.sample_id), str(default_data.sample_type), str(default_data.report_type), str(default_data.doc_type))
 
         cases = {
             0:"exit",
@@ -263,7 +263,7 @@ def main():
 
         if command == cases[5]:
             print (url)   
-            os.system('firefox-esr ' + url) #to be improved         
+            visualize(url)                     
 
         else:
             os.system(command)
