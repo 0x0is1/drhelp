@@ -26,4 +26,5 @@ jobs:
         pip install -r requirements.txt
     - name: Test with python3
       run: |
-        python3 /src/bsfconsole.py -v 
+        cd src
+        python3 bsfconsole.py -v 
