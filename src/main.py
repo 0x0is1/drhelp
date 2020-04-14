@@ -18,22 +18,15 @@ def main_function():
 
         except:
             command = raw_command
+ 
+        cases = {0:"exit",1:"cls",2:"get",3:"help",4:"set",5:"visualize",6: "ftp",7: "show options"}
+
+           ###############
         try:
             genefeature, slfeature, pfeature, cfeature, sofeature, comment = data_collector(str(default_data.sample_id), str(default_data.sample_type), str(default_data.report_type), str(default_data.doc_type))
 
         except:
             data, url = data_collector(str(default_data.sample_id), str(default_data.sample_type), str(default_data.report_type), str(default_data.doc_type))
-
-        cases = {
-            0:"exit",
-            1:"cls",
-            2:"get",
-            3:"help",
-            4:"set",
-            5:"visualize",
-            6: "ftp"
-        }
-
 
         if command == None:
             print('No command supplied. type help to see all commands')
