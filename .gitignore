@@ -12,3 +12,4 @@ TODO.txt
 inf.py
 test.py
 .gitignore
+__pycache__/*
