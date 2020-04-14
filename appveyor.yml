@@ -13,4 +13,4 @@ install:
 - pip install -r requirements.txt
 
 test_script:
-- python3 bsfconsole.py -v
+- python bsfconsole.py -v
