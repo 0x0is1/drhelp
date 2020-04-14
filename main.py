@@ -2,11 +2,10 @@ from soup import soup_collector
 from name_collect import name_collector
 from data_collect import data_collector
 from formal import formal
-from main import default_data
 from visualize import visualize
 import os
-
-def main():
+from default import default_data
+def main_function():
 
     formal()
     while True:
