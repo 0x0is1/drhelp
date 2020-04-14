@@ -1,6 +1,8 @@
 # BSFramework
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/0x0is1off@gmail.com)
 [![GitHub license](https://img.shields.io/github/license/0x0is1/BSFramework)](https://github.com/0x0is1/BSFramework/blob/master/LICENSE)
+[![Maintainability](https://api.codeclimate.com/v1/badges/dfe37044800a1b71ed25/maintainability)](https://codeclimate.com/github/0x0is1/BSFramework/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/dfe37044800a1b71ed25/test_coverage)](https://codeclimate.com/github/0x0is1/BSFramework/test_coverage)
 
 ### :Bio-Samples Framework
 # 
