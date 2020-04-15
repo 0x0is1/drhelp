@@ -9,7 +9,7 @@
 #### For test release:
 
 ```sh
- NOTE: Framework is still in its development MODE
+NOTE: Framework is still in its development MODE
 ```
 ### Project Build Status
 
@@ -22,3 +22,7 @@ Build status from different **Continous Integration Platform** for this  followi
 | CircleCI | [![Build Status](https://circleci.com/gh/0x0is1/BSFramework.svg?style=shield)](https://app.circleci.com/pipelines/github/0x0is1/BSFramework) |
 | AppVeyor | [![Build status](https://ci.appveyor.com/api/projects/status/uipoli0a8hkmyo23/branch/master?svg=true)](https://ci.appveyor.com/project/0x0is1/bsframework/branch/master) |
 | Github Workflow | ![Python application](https://github.com/0x0is1/BSFramework/workflows/Python%20application/badge.svg?branch=master) |
+
+### **Support authors**:
+
+[![Support](https://lh3.googleusercontent.com/_9FjOMozDEAb4yjO4wznpJ9XAoOfJrP3AzrXy0ESJPA-XnBTbHgxGo_JCZMz9lUgdVSGtcs=s170)](https://www.buymeacoffee.com/6dciIwk)
