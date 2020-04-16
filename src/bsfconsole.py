@@ -4,7 +4,7 @@ import os
 import time
 import argparse
 import sys
-from main import main_function
+from shell import main_function
 
 if __name__ == "__main__":
     #main()
