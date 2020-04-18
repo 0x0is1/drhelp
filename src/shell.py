@@ -24,4 +24,3 @@ def main_function():
                             pass
                 
 
-main_function()
