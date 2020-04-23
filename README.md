@@ -34,7 +34,7 @@ Build status from different **Continous Integration Platform** for this  followi
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process of submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our [code of conduct](CODE_OF_CONDUCT.md) and the process of submitting pull requests to us.
 
 ## License 
 [![GitHub license](https://img.shields.io/github/license/0x0is1/BSFramework)](https://github.com/0x0is1/BSFramework/blob/master/LICENSE)
