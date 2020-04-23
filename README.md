@@ -25,5 +25,8 @@ Build status from different **Continous Integration Platform** for this  followi
 
 ### **Support authors**:
 
-[![Support](https://lh3.googleusercontent.com/_9FjOMozDEAb4yjO4wznpJ9XAoOfJrP3AzrXy0ESJPA-XnBTbHgxGo_JCZMz9lUgdVSGtcs=s170)](https://www.buymeacoffee.com/6dciIwk)
-[![Support](https://lh3.googleusercontent.com/JGKReF_m6FGDfvHlJSvLEXowGndM-gNq15g28jCulMNhWeBXbGptUXNGguNcMPW3UBzPOw=s170)](https://paypal.me/0x0is1?locale.x=en_GB)
+<a href="https://www.buymeacoffee.com/6dciIwk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-pink.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+
+<a href="https://paypal.me/0x0is1?locale.x=en_GB" target="_blank"><img src="https://pluspng.com/img-png/-460.png" alt="Dobate with PayPal" style="height: 51px !important;width: 217px !important;" ></a>
+
+
