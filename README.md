@@ -25,8 +25,8 @@ Build status from different **Continous Integration Platform** for this  followi
 
 ### **Support authors**:
 
-<a href="https://www.buymeacoffee.com/6dciIwk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-pink.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+<a href="https://www.buymeacoffee.com/6dciIwk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-pink.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 217px !important;" ></a>
 
-<a href="https://paypal.me/0x0is1?locale.x=en_GB" target="_blank"><img src="https://pluspng.com/img-png/-460.png" alt="Dobate with PayPal" style="height: 51px !important;width: 217px !important;" ></a>
+<a href="https://paypal.me/0x0is1?locale.x=en_GB" target="_blank"><img src="https://pluspng.com/img-png/-460.png" alt="Dobate with PayPal" style="height: 41px !important;width: 217px !important;" ></a>
 
 
