@@ -1,8 +1,5 @@
 # BSFramework
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/0x0is1off@gmail.com)
-[![GitHub license](https://img.shields.io/github/license/0x0is1/BSFramework)](https://github.com/0x0is1/BSFramework/blob/master/LICENSE)
-[![Maintainability](https://api.codeclimate.com/v1/badges/dfe37044800a1b71ed25/maintainability)](https://codeclimate.com/github/0x0is1/BSFramework/maintainability)
-
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/0x0is1off@gmail.com) 
 
 ### :Bio-Samples Framework
 # 
@@ -35,3 +32,11 @@ Build status from different **Continous Integration Platform** for this  followi
 <a href="https://paypal.me/0x0is1?locale.x=en_GB" target="_blank"><img src="https://pluspng.com/img-png/-460.png" alt="Donate with PayPal" height= 51 width = 217></a>
 
 
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process of submitting pull requests to us.
+
+## License 
+[![GitHub license](https://img.shields.io/github/license/0x0is1/BSFramework)](https://github.com/0x0is1/BSFramework/blob/master/LICENSE)
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
