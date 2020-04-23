@@ -25,7 +25,7 @@ Build status from different **Continous Integration Platform** for this  followi
 
 
 ### ***Sample Preview***
-<img src="preview.png">
+<img src="preview.png" alt="Donate with PayPal" height= 151 width = 217>
 
 
 ### **Support authors**:
