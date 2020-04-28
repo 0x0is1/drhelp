@@ -11,7 +11,7 @@ def chain_sequence(spl_id, spl_type):
             if source == None:
                 break
             iterator += 60            
-            print(source.text)
+            print(iterator, source.text)
 
     value = sequence(spl_id, spl_type)
     return value
