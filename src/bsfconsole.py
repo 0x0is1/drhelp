@@ -1,8 +1,3 @@
-import requests
-from bs4 import BeautifulSoup as bs
-import os
-import time
-import argparse
 import sys
 from shell import main_function
 
