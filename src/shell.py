@@ -7,6 +7,7 @@ import os
 import random
 from default_data import default_data
 from options import *
+
 user = 'user@'+str(random.randint(4000, 9999))+'> '
 
 
@@ -42,7 +43,11 @@ def main_function():
         if command[0] == cases[1]:
             os.system('clear')
         if command[0] == cases[2]:
-            get_det(command[1])
+            try: 
+                get_det(command[1]) 
+            except: 
+                print('args not provided') 
+                pass
         if command[0] == cases[5]:
             print("todo")
         if command[0] == cases[6]:

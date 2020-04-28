@@ -7,7 +7,7 @@ def comment(spl_id, spl_type):
     
     
     try:
-        raw_intro = soup.findAll('a', {"href":'https://www.ncbi.nlm.nih.gov/RefSeq/'})[0]
+        raw_intro = soup.find('a', {"href":'https://www.ncbi.nlm.nih.gov/RefSeq/'})
         intro7 = raw_intro.nextSibling
         intro6 = raw_intro.nextSibling.nextSibling
         intro5 = raw_intro.nextSibling.nextSibling.nextSibling
@@ -18,5 +18,4 @@ def comment(spl_id, spl_type):
         intro = str(intro7) + str(intro6) + str(intro5) + str(intro4) + str(intro3) + str(intro2) + str(intro1)
         return intro
     except:
-        pass
-
+        print('Shit happened!')

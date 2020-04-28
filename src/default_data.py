@@ -6,4 +6,4 @@ class default_data:
     #sample_id = 16555694
     sample_type = "nuccore" #nucleotide
     report_type = "genbank"
-    doc_type = "json"
+    doc_type = "html"
