@@ -1,13 +1,15 @@
 # BSFramework
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/0x0is1off@gmail.com) 
-
+<a href="#build"><img src="https://img.shields.io/badge/Build%20Status-link-blue"></a>
 ### :Bio-Samples Framework
 # 
 #### For test release:
 
 ```sh
-NOTE: Framework is still in its development MODE
+NOTE: Framework is still in its ALPHA MODE
 ```
+<div id="build">
+
 ### Project Build Status
 
 Build status from different **Continous Integration Platform** for this  following Project *BSFramework*.
@@ -19,7 +21,7 @@ Build status from different **Continous Integration Platform** for this  followi
 | CircleCI | [![CircleCI](https://circleci.com/gh/StrinTH/BSFramework/tree/master.svg?style=shield)](https://circleci.com/gh/StrinTH/BSFramework/tree/master) |
 | AppVeyor | [![Build status](https://ci.appveyor.com/api/projects/status/uipoli0a8hkmyo23/branch/master?svg=true)](https://ci.appveyor.com/project/0x0is1/bsframework/branch/master) |
 | Github Workflow | ![Python application](https://github.com/0x0is1/BSFramework/workflows/Python%20application/badge.svg?branch=master) |
-
+</div>
 
 ### ***Sample Preview***
 <img src="assets/preview.png" alt="Preview-1" height = 151 width = 217> <img src="assets/preview2.png" alt="Preview-2" height = 151 width = 217> <img src="assets/preview3.png" alt="Preview-3" height = 151 width = 217> <img src="assets/preview4.png" alt="Preview-4" height = 151 width = 217>
