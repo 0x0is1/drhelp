@@ -22,7 +22,7 @@ Build status from different **Continous Integration Platform** for this  followi
 
 
 ### ***Sample Preview***
-<img src="assets/preview.png" alt="Preview-1" height = 151 width = 217>
+<img src="assets/preview.png" alt="Preview-1" height = 151 width = 217> <img src="assets/preview2.png" alt="Preview-2" height = 151 width = 217> <img src="assets/preview3.png" alt="Preview-3" height = 151 width = 217> <img src="assets/preview4.png" alt="Preview-4" height = 151 width = 217>
 
 
 ### **Support authors**:
