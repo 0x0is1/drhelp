@@ -16,13 +16,13 @@ Build status from different **Continous Integration Platform** for this  followi
 | ------ | ------ |
 | BitRise | [![Build Status](https://app.bitrise.io/app/3ca6b9357d67375f/status.svg?token=_Aucb0eMh75RGhhfyCy6gA)](https://app.bitrise.io/app/3ca6b9357d67375f) |
 | TravisCI | [![Build Status](https://travis-ci.com/0x0is1/BSFramework.svg?branch=master)](https://travis-ci.com/0x0is1/BSFramework) |
-| CircleCI | [![Build Status](https://circleci.com/gh/0x0is1/BSFramework.svg?style=shield)](https://app.circleci.com/pipelines/github/0x0is1/BSFramework) |
+| CircleCI | [![CircleCI](https://circleci.com/gh/StrinTH/BSFramework/tree/master.svg?style=shield)](https://circleci.com/gh/StrinTH/BSFramework/tree/master) |
 | AppVeyor | [![Build status](https://ci.appveyor.com/api/projects/status/uipoli0a8hkmyo23/branch/master?svg=true)](https://ci.appveyor.com/project/0x0is1/bsframework/branch/master) |
 | Github Workflow | ![Python application](https://github.com/0x0is1/BSFramework/workflows/Python%20application/badge.svg?branch=master) |
 
 
 ### ***Sample Preview***
-<img src="assets/preview.png" alt="Preview-1" height= 151 width = 217>
+<img src="assets/preview.png" alt="Preview-1" height = 151 width = 217>
 
 
 ### **Support authors**:
