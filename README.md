@@ -24,7 +24,7 @@ Build status from different **Continous Integration Platform** for this  followi
 </div>
 
 ### ***Sample Preview***
-<img src="assets/preview1.gif" alt="Preview-1" height = 151 width = 217>
+<img src="assets/preview1.gif" alt="Preview-1" height = 230 width = 317>
 <p>Other samples <a href="assets/">here</a>.</p>
 
 
