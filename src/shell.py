@@ -1,5 +1,3 @@
-from soup import soup_collector
-from name_collect import name_collector
 from data_collect import data_collector
 from formal import formal
 from visualize import visualize
@@ -52,5 +50,7 @@ def main_function():
             print("todo")
         if command[0] == cases[6]:
             check_fetch()
+        if command[0] == cases[7]:
+            print(get_options)
         else:
             print()

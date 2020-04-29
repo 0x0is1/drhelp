@@ -10,6 +10,7 @@ from source import feature_source
 from options import *
 from sequence import chain_sequence
 from intro import intro
+from soup import soup_collector
 
 def data_collector(sample_id, sample_type, report_type, doc_type, req):
     
@@ -33,6 +34,8 @@ def data_collector(sample_id, sample_type, report_type, doc_type, req):
             return comment(sample_id, sample_type)
         if req == "sequence":
             return chain_sequence(sample_id, sample_type)
+        if req == "all":
+            return soup_collector(sample_id, sample_type)
         else:
             print('Invalid parameter supplied!')
     
