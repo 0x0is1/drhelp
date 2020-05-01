@@ -6,7 +6,7 @@
 | ------ | ------ | ------ |
 | Set | use for setting id, item type, doc type etc.<a href="#set_options">Options</a>  | ```set id=1798174254 type=nuccore doc=html report=genbank```|
 | Get | use for getting the data after setting creds with ```Set```.<a href="#get_options">Options</a>|```get gene```, ```get sequence```, ```get comment```, ```get all``` |
-| Search | use for searching for any term available. <a href="#search_options">Options</a>| ```searchd /roma52``` or ```searchl /roma52```|
+| Search | use for searching for any term available. <a href="#search">Options</a>| ```searchd /roma52``` or ```searchl /roma52```|
 | Clear | use for clearing the console as usual | ```cls```|
 | FTP* | use for getting any data files from http://ncbi.nlm.nih.gov  | ```ftp```|
 | Options | use to get options for selected module | ```options``` |
