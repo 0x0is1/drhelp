@@ -1,5 +1,6 @@
 # BSFramework
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/0x0is1off@gmail.com) 
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/0x0is1off@gmail.com) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework?ref=badge_shield)
+
 <a href="#build"><img src="https://img.shields.io/badge/Build%20Status-link-blue"></a>
 ### :Bio-Samples Framework
 # 
@@ -155,3 +156,6 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our [code of condu
 [![GitHub license](https://img.shields.io/github/license/0x0is1/BSFramework)](https://github.com/0x0is1/BSFramework/blob/master/LICENSE)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework?ref=badge_large)
