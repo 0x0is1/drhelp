@@ -8,5 +8,5 @@ def soup_collector(item_id, item_type):
     #killing javascripts and stylesheets
     for script in soup(["script", "style"]):
         script.decompose()
-    return soup.text
+    return soup
 
