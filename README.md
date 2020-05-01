@@ -119,11 +119,11 @@ Build status from different **Continous Integration Platform** for this  followi
 #### Search options
 To search All detailed summary of search term:
 ```sh
-searchl <ITEM VALUE> <TERM>
+searchd <ITEM VALUE> <TERM>
 ```
 To search All IDs of search TERM:
 ```sh
-searchd <ITEM VALUE> <TERM>
+searchl <ITEM VALUE> <TERM>
 ```
 
 | Item | Details | Values |
