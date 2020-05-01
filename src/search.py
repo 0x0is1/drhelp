@@ -2,6 +2,7 @@ import requests
 import urllib.parse
 import random
 from bs4 import BeautifulSoup as bs
+from options import *
 
 def search_id_list(name, filter1, filter2, category_type):
     term = urllib.parse.quote(name)
@@ -29,11 +30,21 @@ def search_id_list(name, filter1, filter2, category_type):
 
     response = requests.post('https://www.ncbi.nlm.nih.gov/'+ category_type, headers=headers, cookies=cookies, data=data, verify=True)
     soup = bs(response.content, 'html.parser')
-    print(soup.text)
+    if error_key[0] in soup.text:
+        return "No result found"
+    if error_key[1] in soup.text:
+        return "Error404 no such items"
+    else:
+        return soup.text
 
 def search_detail(name, category_type):
     term = urllib.parse.quote(name)
     url = 'https://www.ncbi.nlm.nih.gov/' + category_type +'/?term=' + term + '&report=docsum&format=text'
     page = requests.get(url)
     soup = bs(page.content, 'html.parser')
-    print(soup.text)
+    if error_key[0] in soup.text:
+        return "No result found"
+    if error_key[1] in soup.text:
+        return "Error404 no such items"
+    else:
+        return soup.text
