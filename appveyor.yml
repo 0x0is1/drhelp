@@ -1,5 +1,6 @@
 # appveyor.yml
 ---
+image: Ubuntu
 environment:
   matrix:
   - TOXENV: py27
@@ -10,8 +11,11 @@ environment:
 build: off
 
 install:
-- pip install -r requirements.txt
+- sudo apt-get install -y python3
+- sudo apt-get install -y python3-pip
+- sudo apt-get install -y python3-bs4
+- pip3 install -r requirements.txt
 
 test_script:
 - cd src
-- python bsfconsole.py -v
+- python3 bsfconsole.py -v
