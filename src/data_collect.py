@@ -35,7 +35,7 @@ def data_collector(sample_id, sample_type, report_type, doc_type, req):
         if req == "sequence":
             return chain_sequence(sample_id, sample_type)
         if req == "all":
-            return soup_collector(sample_id, sample_type)
+            return soup_collector(sample_id, sample_type).text
         else:
             print('Invalid parameter supplied!')
     
