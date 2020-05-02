@@ -159,3 +159,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework?ref=badge_large)
+
+<a href="NOTICE.md">Notice</a>
