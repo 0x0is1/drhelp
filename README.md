@@ -1,7 +1,11 @@
 # BSFramework
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/0x0is1off@gmail.com) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework?ref=badge_shield)
-
-<a href="#build"><img src="https://img.shields.io/badge/Build%20Status-link-blue"></a>
+[![Build Status](https://app.bitrise.io/app/3ca6b9357d67375f/status.svg?token=_Aucb0eMh75RGhhfyCy6gA)](https://app.bitrise.io/app/3ca6b9357d67375f) 
+[![Build Status](https://travis-ci.com/0x0is1/BSFramework.svg?branch=master)](https://travis-ci.com/0x0is1/BSFramework)
+[![CircleCI](https://circleci.com/gh/StrinTH/BSFramework/tree/master.svg?style=shield)](https://circleci.com/gh/StrinTH/BSFramework/tree/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/uipoli0a8hkmyo23/branch/master?svg=true)](https://ci.appveyor.com/project/0x0is1/bsframework/branch/master) 
+![Python application](https://github.com/0x0is1/BSFramework/workflows/Python%20application/badge.svg?branch=master) 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework?ref=badge_shield)
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/0x0is1off@gmail.com)
 ### :Bio-Samples Framework
 # 
 #### For test release:
@@ -9,21 +13,6 @@
 ```sh
 NOTE: Framework is still in its ALPHA MODE
 ```
-<div id="build">
-
-### Project Build Status
-
-Build status from different **Continous Integration Platform** for this  following Project *BSFramework*.
-
-| Plateform | Build Status |
-| ------ | ------ |
-| BitRise | [![Build Status](https://app.bitrise.io/app/3ca6b9357d67375f/status.svg?token=_Aucb0eMh75RGhhfyCy6gA)](https://app.bitrise.io/app/3ca6b9357d67375f) |
-| TravisCI | [![Build Status](https://travis-ci.com/0x0is1/BSFramework.svg?branch=master)](https://travis-ci.com/0x0is1/BSFramework) |
-| CircleCI | [![CircleCI](https://circleci.com/gh/StrinTH/BSFramework/tree/master.svg?style=shield)](https://circleci.com/gh/StrinTH/BSFramework/tree/master) |
-| AppVeyor | [![Build status](https://ci.appveyor.com/api/projects/status/uipoli0a8hkmyo23/branch/master?svg=true)](https://ci.appveyor.com/project/0x0is1/bsframework/branch/master) |
-| Github Workflow | ![Python application](https://github.com/0x0is1/BSFramework/workflows/Python%20application/badge.svg?branch=master) |
-</div>
-
 ### ***Sample Preview***
 <img src="assets/preview1.gif" alt="Preview-1" height = 230 width = 317>
 <p>Other samples <a href="assets/">here</a>.</p>
@@ -60,9 +49,9 @@ Build status from different **Continous Integration Platform** for this  followi
 | Options | Details | Examples |
 | ------ | ------ | ------ |
 | ID | NCBI use separate IDs for all data, so we can use the IDs to get required data, You can get the IDs of any species by ```searchl``` command.  | ```set id=<ID here>```|
-| Item Type | NCBI use specific name for every category of species data you want to get. <a href="#type">Available types</a> |```set <Item Value>```  |
-| Report Type | NCBI use specific report type for different purposes <a href="#report">Available types</a> | ```set <Report Name>```|
-| Document Type | NCBI use html and text format. **NOTE**: *there is no CUSTOM ```get``` option available for text format. it will give whole page at once.*  | ```set <doc type>``` html(custom options) or text(all)|
+| Item Type | NCBI use specific name for every category of species data you want to get. <a href="#type">Available types</a> |```set type=<Item Value>```  |
+| Report Type | NCBI use specific report type for different purposes <a href="#report">Available types</a> | ```set report=<Report Name>```|
+| Document Type | NCBI use html and text format. **NOTE**: *there is no CUSTOM ```get``` option available for text format. it will give whole page at once.*  | ```set doc=<doc type>``` html(custom options) or text(all)|
 </div>
 
 ***
