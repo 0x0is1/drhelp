@@ -142,11 +142,11 @@ searchl <ITEM VALUE> <TERM>
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our [code of conduct](CODE_OF_CONDUCT.md) and the process of submitting pull requests to us.
 
 ## License 
-[![GitHub license](https://img.shields.io/github/license/0x0is1/DrHelp)](https://github.com/0x0is1/DrHelp/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/StrinTH/DrHelp)](https://github.com/StrinTH/DrHelp/blob/master/LICENSE)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FStrinTH%2FDrHelp.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FStrinTH%2FDrHelp?ref=badge_large)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework?ref=badge_large)
 
 <a href="NOTICE.md">Notice</a>
