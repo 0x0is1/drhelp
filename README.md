@@ -74,7 +74,6 @@ NOTE: Framework is still in its ALPHA MODE
 | ------ | ------ | ------ |
 | Genbank |  use to get nucleotide samples and other infos. | ```genbank```|
 | FASTA |  use to get Genes samples and other infos. | ```fasta```|
-</div>
 
 ***
 
