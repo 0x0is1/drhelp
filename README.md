@@ -22,7 +22,7 @@ NOTE: Framework is still in its ALPHA MODE
 
 ***
 
-## Options
+#### Options
 
 | Features | Details | Examples |
 | ------ | ------ | ------ |
@@ -35,6 +35,7 @@ NOTE: Framework is still in its ALPHA MODE
 | Help | use to get all available help options | ```help``` |
 | Visualize* | use to open the scrapping page on browser if something is not working | ```visualize``` |
 | Exit | use to exit the console | ```exit``` |
+
 ##### (*) options are under development
 
 
