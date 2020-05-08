@@ -4,7 +4,7 @@
 [![CircleCI](https://circleci.com/gh/StrinTH/DrHelp/tree/master.svg?style=shield)](https://circleci.com/gh/StrinTH/DrHelp/tree/master)
 [![Build status](https://ci.appveyor.com/api/projects/status/uipoli0a8hkmyo23/branch/master?svg=true)](https://ci.appveyor.com/project/0x0is1/DrHelp/branch/master) 
 ![Python application](https://github.com/StrinTH/DrHelp/workflows/Python%20application/badge.svg)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FStrinTH%2FDrHelp.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FStrinTH%2FDrHelp?ref=badge_shield)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework?ref=badge_shield)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/0x0is1off@gmail.com)
 ### :Bio Sampler and research companion Framework
 # 
