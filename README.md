@@ -23,7 +23,6 @@ NOTE: Framework is still in its ALPHA MODE
 ***
 
 ## Options
-<div id="features">
 
 | Features | Details | Examples |
 | ------ | ------ | ------ |
@@ -38,11 +37,9 @@ NOTE: Framework is still in its ALPHA MODE
 | Exit | use to exit the console | ```exit``` |
 ##### (*) options are under development
 
-</div>
 
 ***
 
-<div id="set">
 
 #### Set Options
 
@@ -52,11 +49,9 @@ NOTE: Framework is still in its ALPHA MODE
 | Item Type | NCBI use specific name for every category of species data you want to get. <a href="#type">Available types</a> |```set type=<Item Value>```  |
 | Report Type | NCBI use specific report type for different purposes <a href="#report">Available types</a> | ```set report=<Report Name>```|
 | Document Type | NCBI use html and text format. **NOTE**: *there is no CUSTOM ```get``` option available for text format. it will give whole page at once.*  | ```set doc=<doc type>``` html(custom options) or text(all)|
-</div>
 
 ***
 
-<div id="type">
 
 #### Item-type Informations
 
@@ -68,11 +63,8 @@ NOTE: Framework is still in its ALPHA MODE
 | Probe |  use to get Probes infos. | ```probe```|
 | Popset |  use to getPopset infos. | ```popset```|
 
-</div>
 
 ***
-
-<div id="report">
 
 
 
@@ -86,7 +78,6 @@ NOTE: Framework is still in its ALPHA MODE
 
 ***
 
-<div id="get_options">
 
 #### Get Options
 
@@ -101,10 +92,8 @@ NOTE: Framework is still in its ALPHA MODE
 | CDS |  Use to get CDS of the report.| ```get cds```|
 | Source |  Use to get Source of the report.| ```get source```|
 | All |  Use to get complete page in text format of report.| ```get all```|
-</div>
 
 ***
-<div id="search">
 
 #### Search options
 To search All detailed summary of search term:
@@ -124,7 +113,7 @@ searchl <ITEM VALUE> <TERM>
 | Probe |  Uses to search Probes lists. | ```probe```|
 | Popset |  Uses to search Popset lists. | ```popset```|
 
-</div>
+
 
 ***
 
