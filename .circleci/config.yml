@@ -24,4 +24,4 @@ jobs: # A basic unit of work in a run
       - run:
           command: |
             cd src
-            python bsfconsole.py -v
+            python app.py -v

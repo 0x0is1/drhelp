@@ -27,4 +27,4 @@ jobs:
     - name: Test with python3
       run: |
         cd src
-        python3 bsfconsole.py -v 
+        python3 app.py -v 

@@ -14,4 +14,4 @@ install:
 # Run the unit test
 script:
 - cd src
-- python3 bsfconsole.py -v
+- python3 app.py -v
