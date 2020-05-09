@@ -26,9 +26,9 @@ NOTE: Framework is still in its ALPHA MODE
 
 | Features | Details | Examples |
 | ------ | ------ | ------ |
-| Set | use for setting id, item type, doc type etc.<a href="#set_options">Options</a>  | ```set id=1798174254 type=nuccore doc=html report=genbank```|
-| Get | use for getting the data after setting creds with ```Set```.<a href="#get_options">Options</a>|```get gene```, ```get sequence```, ```get comment```, ```get all``` |
-| Search | use for searching for any term available. <a href="#search_options">Options</a>| ```searchd /roma52``` or ```searchl /roma52```|
+| Set | use for setting id, item type, doc type etc.<a href="#set-options">Options</a>  | ```set id=1798174254 type=nuccore doc=html report=genbank```|
+| Get | use for getting the data after setting creds with ```Set```.<a href="#get-options">Options</a>|```get gene```, ```get sequence```, ```get comment```, ```get all``` |
+| Search | use for searching for any term available. <a href="#search-options">Options</a>| ```searchd /roma52``` or ```searchl /roma52```|
 | Clear | use for clearing the console as usual | ```cls```|
 | FTP* | use for getting any data files from http://ncbi.nlm.nih.gov  | ```ftp```|
 | Options | use to get options for selected module | ```options``` |
@@ -47,8 +47,8 @@ NOTE: Framework is still in its ALPHA MODE
 | Options | Details | Examples |
 | ------ | ------ | ------ |
 | ID | NCBI use separate IDs for all data, so we can use the IDs to get required data, You can get the IDs of any species by ```searchl``` command.  | ```set id=<ID here>```|
-| Item Type | NCBI use specific name for every category of species data you want to get. <a href="#type">Available types</a> |```set type=<Item Value>```  |
-| Report Type | NCBI use specific report type for different purposes <a href="#report">Available types</a> | ```set report=<Report Name>```|
+| Item Type | NCBI use specific name for every category of species data you want to get. <a href="#item-type-informations">Available types</a> |```set type=<Item Value>```  |
+| Report Type | NCBI use specific report type for different purposes <a href="#report-type-informations">Available types</a> | ```set report=<Report Name>```|
 | Document Type | NCBI use html and text format. **NOTE**: *there is no CUSTOM ```get``` option available for text format. it will give whole page at once.*  | ```set doc=<doc type>``` html(custom options) or text(all)|
 
 ***
