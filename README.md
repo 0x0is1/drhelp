@@ -1,4 +1,4 @@
-# DrHelp
+# DoctorHelp
 
 [![Build Status](https://travis-ci.com/StrinTH/DrHelp.svg?branch=master)](https://travis-ci.com/StrinTH/DrHelp)
 [![CircleCI](https://circleci.com/gh/StrinTH/DrHelp/tree/master.svg?style=shield)](https://circleci.com/gh/StrinTH/DrHelp/tree/master)
@@ -7,7 +7,7 @@
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework?ref=badge_shield)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/0x0is1off@gmail.com)
 
-### :Viralogy and microbiology research companion Framework
+### Microbiology and Viralogy research companion framework
 
 #### For test release:
 
@@ -28,6 +28,50 @@ $ pip install -r requirements.txt
 $ chmod +x drhelp.sh
 $ bash drhelp.sh --shell
 ```
+
+# Test Run
+
+
+```sh
+input(0): 
+    user@4829> searchl nuccore covid
+
+output: 
+    Trying attempt0...
+    1519315500
+    1829653638
+    1829653637
+    1829653635
+
+input(1):
+    user@4829> set id=1519315500
+output:
+    {1: 'id', 2: 'type', 3: 'report', 4: 'doc'}
+    {1: '1519315500', 2: 'nuccore', 3: 'genbank', 4: 'html'}
+
+input(2):
+    user@4829> get intro
+output:
+    REFERENCE   8  (bases 1 to 4962)
+    AUTHORS   Jeunemaitre X, Lifton RP, Hunt SC, Williams RR and Lalouel JM.
+    TITLE     Absence of linkage between the angiotensin converting enzyme locus
+                and human essential hypertension
+    JOURNAL   Nat. Genet. 1 (1), 72-75 (1992)
+    PUBMED   <a href="https://www.ncbi.nlm.nih.gov/pubmed/1338766">1338766</a>
+    REFERENCE   9  (bases 1 to 4962)
+    AUTHORS   Ehlers MR and Riordan JF.
+    TITLE     Angiotensin-converting enzyme: zinc- and inhibitor-binding
+                stoichiometries of the somatic and testis isozymes
+    JOURNAL   Biochemistry 30 (29), 7118-7126 (1991)
+    PUBMED   <a href="https://www.ncbi.nlm.nih.gov/pubmed/1649623">1649623</a>
+    REFERENCE   10 (bases 1 to 4962)
+    AUTHORS   Sancho,J., Re,R., Burton,J., Barger,A.C. and Haber,E.
+    TITLE     The role of the renin-angiotensin-aldosterone system in
+                cardiovascular homeostasis in normal human subjects
+    JOURNAL   Circulation 53 (3), 400-405 (1976)
+    PUBMED   <a href="https://www.ncbi.nlm.nih.gov/pubmed/174834">174834</a>
+```
+
 
 # Documentation
 
