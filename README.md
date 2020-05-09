@@ -121,9 +121,9 @@ searchl <ITEM VALUE> <TERM>
 
 ### **Support authors**:
 
-</p><a href="https://www.buymeacoffee.com/6dciIwk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-pink.png" alt="Buy Me A Coffee" height= 52 width = 218></a>
+[![Donate](./assets/default-pink.png)](https://www.buymeacoffee.com/6dciIwk)
 
-</p><a href="https://paypal.me/0x0is1?locale.x=en_GB" target="_blank"><img src="https://pluspng.com/img-png/-460.png" alt="Donate with PayPal" height= 52 width = 218></a>
+[![Donate](./assets/-460.png)](https://paypal.me/0x0is1?locale.x=en_GB)
 
 
 ## Contributing
