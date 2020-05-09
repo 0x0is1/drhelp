@@ -6,17 +6,28 @@
 ![Python application](https://github.com/StrinTH/DrHelp/workflows/Python%20application/badge.svg)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework?ref=badge_shield)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/0x0is1off@gmail.com)
-### :Bio Sampler and research companion Framework
-# 
+
+### :Viralogy and microbiology research companion Framework
+
 #### For test release:
 
 ```sh
 NOTE: Framework is still in its ALPHA MODE
 ```
+
 ### ***Sample Preview***
 
-<p>Samples available <a href="assets/">here</a>.</p>
+Samples available [here](./assets/)
 
+# Installation
+
+```sh
+$ git clone https://github.com/StrinTH/DrHelp
+$ cd DrHelp
+$ pip install -r requirements.txt
+$ chmod +x drhelp.sh
+$ bash drhelp.sh --shell
+```
 
 # Documentation
 

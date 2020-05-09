@@ -7,5 +7,7 @@ if __name__ == "__main__":
         if sys.argv[1] == "-v" or sys.argv[1] == "--version":
             print(formal())
             print('BSFramework v0.2')
-    except:
+        if sys.argv[1] == "--shell":
             main_function()
+    except:
+            print('Oops! Something went wrong!')
