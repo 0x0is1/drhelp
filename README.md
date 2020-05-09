@@ -14,8 +14,8 @@
 NOTE: Framework is still in its ALPHA MODE
 ```
 ### ***Sample Preview***
-<img src="assets/preview1.gif" alt="Preview-1" height = 230 width = 318>
-<p>Other samples <a href="assets/">here</a>.</p>
+
+<p>Samples available<a href="assets/">here</a>.</p>
 
 
 # Documentation
