@@ -15,7 +15,7 @@ NOTE: Framework is still in its ALPHA MODE
 ```
 ### ***Sample Preview***
 
-<p>Samples available<a href="assets/">here</a>.</p>
+<p>Samples available <a href="assets/">here</a>.</p>
 
 
 # Documentation
