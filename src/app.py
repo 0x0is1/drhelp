@@ -6,7 +6,7 @@ if __name__ == "__main__":
     try:
         if sys.argv[1] == "-v" or sys.argv[1] == "--version":
             print(formal())
-            print('BSFramework v0.2')
+            print('BSFramework v0.6')
         if sys.argv[1] == "--shell":
             main_function()
     except:
