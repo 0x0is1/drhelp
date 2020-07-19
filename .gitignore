@@ -1,6 +1,7 @@
 .idea
 .vscode
-MyTubExt
+yTubExt
+assets/*
 geckodriver.log
 style.css
 script.js
