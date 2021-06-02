@@ -1,6 +1,5 @@
 # DoctorHelp
-
-[![Build Status](https://travis-ci.com/StrinTH/DrHelp.svg?branch=master)](https://travis-ci.com/StrinTH/DrHelp) ![Python application](https://github.com/StrinTH/DrHelp/workflows/Python%20application/badge.svg)
+[![Build Status](https://travis-ci.com/0x0is1/glimmer.svg?branch=master)](https://travis-ci.com/0x0is1/glimmer)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FStrinTH%2FBSFramework?ref=badge_shield)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/0x0is1off@gmail.com)
 [![Documentation Status](https://readthedocs.org/projects/drhelp/badge/?version=latest)](https://drhelp.readthedocs.io/en/latest/?badge=latest)
