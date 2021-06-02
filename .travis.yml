@@ -13,4 +13,4 @@ install:
 
 # Run the unit test
 script:
-- python3 scr/app.py -v
+- python3 src/app.py -v
